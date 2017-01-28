@@ -98,7 +98,7 @@ for example, print_grid2(3,4) results in:
 What to do about rounding? – you decide.
 
 Another example: print_grid2(5,3):
-
++ - - - +
 + - - - + - - - + - - - + - - - + - - - +
 |       |       |       |       |       |
 |       |       |       |       |       |
@@ -121,3 +121,18 @@ Another example: print_grid2(5,3):
 |       |       |       |       |       |
 + - - - + - - - + - - - + - - - + - - - +
 '''
+
+def print_grid(dimensions, box_size):
+    for row in range((box_size + 1) * dimensions + 1):
+        if row % (box_size + 1) == 0:## for border rows
+            for k in range(5):
+                print("+ - - - ", end="")
+            print("+")
+        else:
+            for j in range(5):
+                    print("|", end="")
+                    print("       ", end="")
+            print("|")
+
+
+print(0 % 5)
