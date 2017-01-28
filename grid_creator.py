@@ -125,16 +125,16 @@ Another example: print_grid2(5,3):
 def print_grid(dimensions, box_size):
     for row in range((box_size + 1) * dimensions + 1):
         if row % (box_size + 1) == 0:## for border rows
-            for k in range(box_size + 2):
+            for k in range(dimensions):
                 print("+ ", end="")
                 for g in range(box_size):
                     print("- ", end="")
             print("+")
         else:
-            for j in range(box_size + 2):
+            for j in range(dimensions):
                     print("|", end="")
                     for p in range(box_size * 2 + 1):
                         print(" ", end="")
             print("|")
 
-print_grid(5, 8)
+print_grid(6, 2)
