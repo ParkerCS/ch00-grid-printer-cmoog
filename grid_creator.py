@@ -137,4 +137,4 @@ def print_grid(dimensions, box_size):
                         print(" ", end="")
             print("|")
 
-print_grid(6, 2)
+print_grid(2, 5)
