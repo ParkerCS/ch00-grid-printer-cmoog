@@ -1,3 +1,5 @@
+#Nice work
+
 '''
 Grid Printer Exercise
 Printing a Grid (adapted from Downey, “Think Python”, ex. 3.5)
@@ -137,4 +139,4 @@ def print_grid(dimensions, box_size):
                         print(" ", end="")
             print("|")
 
-print_grid(2, 5)
+print_grid(5, 2)
